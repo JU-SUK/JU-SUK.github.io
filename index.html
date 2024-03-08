@@ -28,7 +28,7 @@
     border-radius: 50%;
     margin: 20px auto;
   }
-  h2 {
+  h1, h2 {
     color: #333;
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
@@ -40,8 +40,18 @@
   a {
     color: #00f;
   }
-  .publication img {
-    width: 100px;
+  .publication-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .publication-item{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .publication-item img {
+    width: 200px;
+    height: auto;
     border: 2px solid #000;
     border-radius: 5px;
   }
@@ -61,15 +71,29 @@
     <p>Hello! I am a MS./Ph.D. student under the supervision of Prof.H.Jin kim at Seoul National University. My research interests are at the intersection of Reinforcement Learning, Machine Learning, and Robotics</p>
     <div>
       <!-- 여기에 링크를 추가하세요 -->
-      <a href="cv.pdf" target="_blank">이력서</a> |
-      <a href="mailto:jlee24@snu.ac.kr">이메일</a> |
-      <a href="https://scholar.google.com/citations?user=yourid" target="_blank">구글 학술 검색</a> |
-      <a href="https://github.com/JU-SUK" target="_blank">깃허브</a>
+      <a href="cv.pdf" target="_blank">CV</a> |
+      <a href="mailto:jlee24@snu.ac.kr">Email</a> |
+      <a href="https://scholar.google.com/citations?user=yourid" target="_blank">Google Scholar</a> |
+      <a href="https://github.com/JU-SUK" target="_blank">Github</a>
     </div>
   </header>
 
+  <section class="publication">
+    <h2>Publications and Preprints</h2>
+    <div class="publication-section">
+      <!-- 각 출판물 항목을 여기에 추가하세요 -->
+      <div class="publication-item">
+        <img src="example.png" alt="My first publication will be posted here">
+        <p><strong>Not Yet</strong><br>
+        Jusuk Lee<br>
+        Preprint: <a href="link-to-paper">paper</a> | <a href="link-to-code">code</a> | <a href="link-to-project-page">project page</a></p>
+      </div>
+      <!-- 다른 출판물 항목들 추가... -->
+    </div>
+  </section>
+
   <section class="education">
-    <h2>교육</h2>
+    <h2>Education</h2>
     <p><strong>Seoul National University</strong> (Mar 2024 - Present)<br>
     Integrated M.S./Ph.D. student in Mechanical & Aerospace Engineering</p>
     <!-- 다른 교육 이력 추가 -->
@@ -78,14 +102,14 @@
   </section>
 
   <section class="work-experience">
-    <h2>업무 경험</h2>
+    <h2>Work Experience</h2>
     <p><strong>Devisters</strong> (Sep 2018 - Sep 2020)<br>
     Machine Learning Engineer</p>
     <!-- 다른 업무 경험 추가 -->
   </section>
 
   <section class="honors-awards">
-    <h2>수상 경력</h2>
+    <h2>Honors and Awards</h2>
     <!-- 수상 내용 추가 -->
   </section>
 
