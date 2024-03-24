@@ -1,121 +1,168 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>jusuklee.me</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  header, .education, .work-experience, .honors-awards {
-    margin-bottom: 20px;
-  }
-  header {
-    text-align: center;
-    padding: 20px 0;
-  }
-  .profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px auto;
-  }
-  h1, h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-  }
-  p, li {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  a {
-    color: #00f;
-  }
-  .publication-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .publication-item{
-    width: 50%;
-    margin-bottom: 20px;
-  }
-  .publication-item img {
-    width: 200px;
-    height: auto;
-    border: 2px solid #000;
-    border-radius: 5px;
-  }
-  @media (max-width: 768px) {
-    .container {
-      width: 95%;
-    }
-  }
-</style>
-</head>
-<body>
-<div class="container">
-  <header>
-    <img src="jusuklee.jpg" alt="Jusuk Lee" class="profile-picture">
-    <h1>Jusuk Lee</h1>
-    <p>Hello!</p>
-    <p>Hello! I am a MS./Ph.D. student under the supervision of Prof.H.Jin kim at Seoul National University. My research interests are at the intersection of Reinforcement Learning, Machine Learning, and Robotics</p>
-    <div>
-      <!-- 여기에 링크를 추가하세요 -->
-      <a href="cv.pdf" target="_blank">CV</a> |
-      <a href="mailto:jlee24@snu.ac.kr">Email</a> |
-      <a href="https://scholar.google.com/citations?user=yourid" target="_blank">Google Scholar</a> |
-      <a href="https://github.com/JU-SUK" target="_blank">Github</a>
-    </div>
-  </header>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <section class="publication">
-    <h2>Publications and Preprints</h2>
-    <div class="publication-section">
-      <!-- 각 출판물 항목을 여기에 추가하세요 -->
-      <div class="publication-item">
-        <img src="example.png" alt="My first publication will be posted here">
-        <p><strong>Not Yet</strong><br>
-        Jusuk Lee<br>
-        Preprint: <a href="link-to-paper">paper</a> | <a href="link-to-code">code</a> | <a href="link-to-project-page">project page</a></p>
-      </div>
-      <!-- 다른 출판물 항목들 추가... -->
-    </div>
-  </section>
+    <title>Jusuk Lee</title>
 
-  <section class="education">
-    <h2>Education</h2>
-    <p><strong>Seoul National University</strong> (Mar 2024 - Present)<br>
-    Integrated M.S./Ph.D. student in Mechanical & Aerospace Engineering</p>
-    <!-- 다른 교육 이력 추가 -->
-    <p><strong>Yonsei University</strong> (Mar 2017 - Feb 2024)<br>
-    B.S in Mechanical Engineering</p>
-  </section>
+    <meta name="author" content="Jusuk lee">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
 
-  <section class="work-experience">
-    <h2>Work Experience</h2>
-    <p><strong>Devisters</strong> (Sep 2018 - Sep 2020)<br>
-    Machine Learning Engineer</p>
-    <!-- 다른 업무 경험 추가 -->
-  </section>
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Jusuk Lee
+                </p>
+                <p>Hello! I am a MS./Ph.D. student under the supervision of <a href="https://scholar.google.co.kr/citations?user=TLQUwIMAAAAJ&hl=en">Prof.H.Jin kim</a> at Seoul National University. My research interests are at the intersection of Reinforcement Learning, Machine Learning, and Robotics.
+                </p>
+                
+                <p style="text-align:center">
+                  <a href="mailto:jlee24@snu.ac.kr">Email</a> &nbsp;/&nbsp;
+                  <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/JU-SUK/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/jusuklee_cut_2.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/jusuklee_cut_2.png" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Publication and Preprints</h2>
+                <p>
+                  Representative papers are <span class="highlight">highlighted</span>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-  <section class="honors-awards">
-    <h2>Honors and Awards</h2>
-    <!-- 수상 내용 추가 -->
-  </section>
 
-  <footer>
-    <p>&copy; 2024 당신의 이름. All rights reserved.</p>
-  </footer>
-</div>
-</body>
+
+    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
+          <source src="images/smerf.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/smerf.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function smerf_start() {
+            document.getElementById('smerf_image').style.opacity = "1";
+          }
+
+          function smerf_stop() {
+            document.getElementById('smerf_image').style.opacity = "0";
+          }
+          smerf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://smerf-3d.github.io/">
+          <span class="papertitle">SMERF: Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration</span>
+        </a>
+        <br>
+		<a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth*</a>,
+		<a href="https://phogzone.com/">Peter Hedman*</a>,
+		<a href="https://creiser.github.io/">Christian Reiser</a>,
+		<a href="">Peter Zhizhin</a>,
+		<a href="">Jean-François Thibert</a>,
+        <a href="https://lucic.ai/">Mario Lučić</a>,
+        <a href="https://szeliski.org/">Richard Szeliski</a>,
+		<strong>Jonathan T. Barron</strong>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://smerf-3d.github.io/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=zhO8iUBpnCc">video</a>
+        /
+        <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
+        <p></p>
+        <p>
+        Distilling a Zip-NeRF into a tiled set of MERFs lets you fly through radiance fields on laptops and smartphones at 60 FPS.
+        </p>
+      </td>
+    </tr>
+	
+    <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/recon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/recon.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function recon_start() {
+            document.getElementById('recon_image').style.opacity = "1";
+          }
+
+          function recon_stop() {
+            document.getElementById('recon_image').style.opacity = "0";
+          }
+          recon_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://reconfusion.github.io/">
+			<span class="papertitle">ReconFusion: 3D Reconstruction with Diffusion Priors</span>
+        </a>
+        <br>
+        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu*</a>,
+		<a href="https://bmild.github.io/">Ben Mildenhall*</a>,
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://keunhong.com/">Keunhong Park</a>,
+        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
+        <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+		<strong>Jonathan T. Barron</strong>,
+        <a href="https://poolio.github.io/">Ben Poole</a>,
+        <a href="https://holynski.org/">Aleksander Holynski*</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://reconfusion.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/">arXiv</a>
+        <p></p>
+        <p>
+        Using a multi-image diffusion model as a regularizer lets you recover high-quality radiance fields from just a handful of images.
+        </p>
+      </td>
+    </tr>   
+
+            
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
