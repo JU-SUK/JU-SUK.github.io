@@ -1,0 +1,14 @@
+title: Jusuk Lee
+description: Personal website of Jusuk Lee
+url: "https://JU-SUK.github.io"
+
+# Jekyll 처리에서 제외할 파일/디렉터리
+exclude:
+  - README.md
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Liquid 처리 중 그대로 보존할 파일들
+keep_files:
+  - .git

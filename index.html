@@ -7,18 +7,20 @@
 
     <meta name="author" content="Jusuk lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1 1%22&gt;&lt;/svg&gt;">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
         <tr style="padding:0px">
-          <td style="padding:0px">
+          <td style="padding:24px 20px">
             <!-- 상단 소개 섹션 -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr style="padding:0px">
                   <td style="padding:2.5%;width:63%;vertical-align:middle">
@@ -26,24 +28,32 @@
                       Jusuk Lee
                     </p>
                     <p>
-                      Hello! I am a Integrated M.S./Ph.D. Student under the supervision of 
+                      Hello! I am a first year Ph.D. Student under the supervision of 
                       <a href="https://scholar.google.co.kr/citations?user=TLQUwIMAAAAJ&hl=en">Prof.H.Jin kim</a> 
                       at Seoul National University. I completed my B.S. in Mechanical Engineering at Yonsei University. <br>
 
                       I am interested in the intersection of robotics, machine learning, and deep learning. I am currently focusing on building a generalizable robotic agents capable of adapting to new tasks and environments. <br>
 
                     </p>
-                    <p style="text-align:center">
-                      <a href="mailto:jlee24@snu.ac.kr">Email</a> &nbsp;/&nbsp;
-                      <a href="data/cv_rss.pdf">CV</a> &nbsp;/&nbsp;
-                      <a href="https://scholar.google.com/citations?user=xI4wFP0AAAAJ&hl=ko/">Google Scholar</a> &nbsp;/&nbsp;
-                      <a href="https://github.com/JU-SUK/">Github</a>
+                    <p style="text-align:center; margin-top: 12px;">
+                      <a class="link-pill" href="mailto:jlee24@snu.ac.kr">
+                        <i class="fas fa-envelope"></i> Email
+                      </a>
+                      <a class="link-pill" href="cv/cv_rss.pdf">
+                        <i class="fas fa-file-pdf"></i> CV
+                      </a>
+                      <a class="link-pill" href="https://scholar.google.com/citations?user=xI4wFP0AAAAJ&hl=ko/">
+                        <i class="fas fa-graduation-cap"></i> Google Scholar
+                      </a>
+                      <a class="link-pill" href="https://github.com/JU-SUK/">
+                        <i class="fab fa-github"></i> GitHub
+                      </a>
                     </p>
                   </td>
                   <td style="padding:2.5%;width:40%;max-width:40%">
-                    <a href="images/profile.jpeg">
-                      <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" 
-                           alt="profile photo" src="images/profile.jpeg" class="hoverZoomLink">
+                    <a href="cv/profile.jpeg">
+                      <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;"
+                           alt="profile photo" src="cv/profile.jpeg" class="hoverZoomLink">
                     </a>
                   </td>
                 </tr>
@@ -51,7 +61,7 @@
             </table>
 
             <!-- News 섹션 -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
                   <td style="padding:20px;width:100%;vertical-align:middle">
@@ -65,8 +75,8 @@
               </tbody>
             </table>
 
-            <!-- Publications 섹션 (기존 코드 유지) -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <!-- Publications 섹션 -->
+            <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
                   <td style="padding:20px;width:100%;vertical-align:middle">
@@ -74,35 +84,58 @@
                     <p>
                       Representative papers are <span class="highlight">highlighted</span>.
                     </p>
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
-                      <tbody>
+                    <!-- DynaFLIP -->
+                    <div class="pub-card">
+                      <div class="pub-media">
+                        <video src="publications/dynaflip/static/videos/teaser.mp4"
+                               autoplay muted loop playsinline></video>
+                      </div>
+                      <div class="pub-info">
+                        <a class="pub-title" href="publications/dynaflip/">DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation</a>
+                        <p><strong>Jusuk Lee</strong>, Seungjae Lee, Jonghun Shin, Hoseong Jung, Sungha Kim, Daesol Cho, H. Jin Kim, Jia-Bin Huang<sup>†</sup>, Furong Huang<sup>†</sup> <span style="color:#64748b; font-size:12px;">(<sup>†</sup> equal advising)</span></p>
+                        <!-- <p class="pub-venue">TODO: Venue YYYY</p> -->
+                        <p class="pub-links">
+                          <a class="link-pill link-pill-sm" href="publications/dynaflip/"><i class="fas fa-globe"></i> project page</a>
+                          <a class="link-pill link-pill-sm" href="TODO_ARXIV_URL"><i class="ai ai-arxiv"></i> arXiv</a>
+                          <a class="link-pill link-pill-sm" href="TODO_CODE_URL"><i class="fab fa-github"></i> github</a>
+                        </p>
+                      </div>
+                    </div>
 
-                        <tr>
-                          <td style="padding:10px 20px 10px 0px; width:25%; max-width:160px; vertical-align:top;">
-                            <video poster="data/publications/PSD/thumbnail_poster.png"
-                                   src="data/publications/PSD/psd_thumbnail.mp4"
-                                   controls
-                                   style="width:100%; height:auto; border-radius: 8px;">
-                            </video>
-                          </td>
+                    <!-- TODO: boost — 제목, 저자, venue, 링크, teaser 채우세요 -->
+                    <div class="pub-card">
+                      <div class="pub-media">
+                        <img src="publications/dynaflip/static/experiments/placeholder.png" alt="TODO boost teaser">
+                      </div>
+                      <div class="pub-info">
+                        <a class="pub-title" href="publications/boost/">BooST: Bridging Semantics and Motions for Efficient Skill Transfer</a>
+                        <p><strong>Jusuk Lee</strong>, Daesol Cho, Jonghun Shin, Seungyeon Yoo, Jonghae Park, Taekbeom Lee, H. Jin Kim</p>
+                        <p class="pub-venue">CoRL 2025 Workshop</p>
+                        <p class="pub-links">
+                          <a class="link-pill link-pill-sm" href="publications/boost/"><i class="fas fa-globe"></i> project page</a>
+                          <a class="link-pill link-pill-sm" href="TODO_ARXIV_URL"><i class="ai ai-arxiv"></i> arXiv</a>
+                          <a class="link-pill link-pill-sm" href="TODO_CODE_URL"><i class="fab fa-github"></i> github</a>
+                        </p>
+                      </div>
+                    </div>
 
-                          <td style="padding:10px 0px 10px 0px; width:75%; vertical-align:middle;">
-                            <p style="margin:0px;">
-                              <a href="https://arxiv.org/abs/2511.03187">
-                                <strong>Periodic Skill Discovery</strong>
-                              </a>
-                              <br>
-                              Jonghae Park, Daesol Cho, <strong>Jusuk Lee</strong>, Dongseok Shim, Inkyu Jang, H. Jin Kim
-                              <br>
-                              <em style="color: red; font-weight: bold;">NeurIPS 2025</em>
-                              <br>
-                              <a href="https://jonghaepark.github.io/psd/">Project page</a> |
-                              <a href="https://arxiv.org/abs/2511.03187">arXiv</a> |
-                              <a href="https://JU-SUK.github.io">Code</a>
-                            </p>
-                          </td>
-                        </tr>
-                      </tbody>
+                    <div class="pub-card">
+                      <div class="pub-media">
+                        <video poster="publications/psd/thumbnail_poster.png"
+                               src="publications/psd/psd_thumbnail.mp4"
+                               autoplay muted loop playsinline></video>
+                      </div>
+                      <div class="pub-info">
+                        <a class="pub-title" href="https://jonghaepark.github.io/psd/">Periodic Skill Discovery</a>
+                        <p>Jonghae Park, Daesol Cho, <strong>Jusuk Lee</strong>, Dongseok Shim, Inkyu Jang, H. Jin Kim</p>
+                        <p class="pub-venue">NeurIPS 2025</p>
+                        <p class="pub-links">
+                          <a class="link-pill link-pill-sm" href="https://jonghaepark.github.io/psd/"><i class="fas fa-globe"></i> project page</a>
+                          <a class="link-pill link-pill-sm" href="https://arxiv.org/abs/2511.03187"><i class="ai ai-arxiv"></i> arXiv</a>
+                          <a class="link-pill link-pill-sm" href="https://github.com/jonghaepark/psd"><i class="fab fa-github"></i> github</a>
+                        </p>
+                      </div>
+                    </div>
 
                   </td>
                 </tr>
@@ -110,114 +143,137 @@
             </table>
 
             <!-- Projects 섹션 -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
                   <td style="padding:20px;width:100%;vertical-align:middle">
-                    <!-- 공통 헤더: Projects -->
                     <h2>Projects</h2>
 
                     <p>
                       Representative projects are <span class="highlight">highlighted</span>.
                     </p>
 
-                    <!-- 전체를 감싸는 한 개의 테이블을 만들어, 각 프로젝트를 한 줄씩 배치 -->
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
                       <tbody>
 
                         <!-- 프로젝트 1 -->
                         <tr>
-                          <!-- 왼쪽: 이미지 셀 -->
                           <td style="width:30%; vertical-align:middle; text-align:center; padding:10px;">
-                            <img src="images/LCLS.png"
+                            <img src="projects/lcls/LCLS.png"
                                 alt="Learing cooperation with learned skills"
                                 style="width:100%; height:auto;">
                           </td>
-                          <!-- 오른쪽: 텍스트 셀 -->
                           <td style="width:70%; vertical-align:middle; padding:10px;">
                             <h3>Learning Cooperation with Learned Skills</h3>
                             <p>
-                              Multi-agent reinforcement learning(MARL) typically requires the design of 
-                              a sophisticated reward function to effectively guide multiple agents in learning 
-                              desirable behaviors. However, this process is time-consuming and demands domain 
-                              knowledge. In this paper, we train each agent to learn a diverse set of skills 
-                              in advance. Then the agents are able to solve complex tasks by effectively 
+                              Multi-agent reinforcement learning(MARL) typically requires the design of
+                              a sophisticated reward function to effectively guide multiple agents in learning
+                              desirable behaviors. However, this process is time-consuming and demands domain
+                              knowledge. In this paper, we train each agent to learn a diverse set of skills
+                              in advance. Then the agents are able to solve complex tasks by effectively
                               coordinating these skills.<br>
                               Mar. 2024 - Jun. 2024
                             </p>
                             <p>
-                              <a href="data/lcls.pdf">paper</a> |
-                              <a href="https://github.com/JU-SUK/multi_robot">code</a>
+                              <a class="link-pill link-pill-sm" href="projects/lcls/lcls.pdf"><i class="fas fa-file-pdf"></i> paper</a>
+                              <a class="link-pill link-pill-sm" href="https://github.com/JU-SUK/multi_robot"><i class="fab fa-github"></i> github</a>
                             </p>
                           </td>
                         </tr>
 
                         <!-- 프로젝트 2 -->
                         <tr>
-                          <!-- 왼쪽: 이미지 셀 -->
                           <td style="width:30%; vertical-align:middle; text-align:center; padding:10px;">
-                            <img src="images/drone.png"
+                            <img src="projects/drone/drone.png"
                                 alt="Autonomous drone system"
                                 style="width:100%; height:auto;">
                           </td>
-                          <!-- 오른쪽: 텍스트 셀 -->
                           <td style="width:70%; vertical-align:middle; padding:10px;">
                             <h3><span class="highlight">Autonomous drone system</span></h3>
                             <p>
-                              This project focuses on developing an autonomous drone system capable of 
-                              real-time obstacle avoidance, building exploration, payload delivery to a 
+                              This project focuses on developing an autonomous drone system capable of
+                              real-time obstacle avoidance, building exploration, payload delivery to a
                               specified location, and safe return to home base. The system has been successfully applied in both simulation and on real hardware.<br>
                               Mar. 2023 - Sep. 2023
                             </p>
                             <p>
-                              <a href="https://www.youtube.com/watch?v=wF8rKyWoi74">video</a> | 
-                              <a href="https://github.com/YonseiDrone/ysdrone_koreauav2023">code(real)</a> |
-                              <a href="https://github.com/YonseiDrone/koreauav2023.git">code(simulation)</a>
+                              <a class="link-pill link-pill-sm" href="https://www.youtube.com/watch?v=wF8rKyWoi74"><i class="fab fa-youtube"></i> video</a>
+                              <a class="link-pill link-pill-sm" href="https://github.com/YonseiDrone/ysdrone_koreauav2023"><i class="fab fa-github"></i> github(real)</a>
+                              <a class="link-pill link-pill-sm" href="https://github.com/YonseiDrone/koreauav2023.git"><i class="fab fa-github"></i> github(simulation)</a>
                             </p>
                           </td>
                         </tr>
 
                         <!-- 프로젝트 3 -->
                         <tr>
-                          <!-- 왼쪽: 이미지 셀 -->
                           <td style="width:30%; vertical-align:middle; text-align:center; padding:10px;">
-                            <img src="images/undergraduate_paper.png"
+                            <img src="projects/collision_detection/undergraduate_paper.png"
                                 alt="Human robot detection system"
                                 style="width:100%; height:auto;">
                           </td>
-                          <!-- 오른쪽: 텍스트 셀 -->
                           <td style="width:70%; vertical-align:middle; padding:10px;">
                             <h3>Collision detection system based on computer vision for Human-Robot Interaction</h3>
                             <p>
-                              This project proposes a system that detects collision between an operator 
-                              and a robot by using a depth camera. Through a human pose detector, 
-                              the proposed collision detection system obtains the positional information 
-                              of key points of the operator from the images taken by the depth camera. 
-                              In addition, the positional information of each robot link is obtained from 
-                              the joint angle data of the robot through forward kinematics. Then a bounding 
-                              volume (OBB: Oriented Bounding Box) is applied to both the operator and each 
-                              robot link. The SAT (Separated Axis Theorem) is used to detect overlap 
+                              This project proposes a system that detects collision between an operator
+                              and a robot by using a depth camera. Through a human pose detector,
+                              the proposed collision detection system obtains the positional information
+                              of key points of the operator from the images taken by the depth camera.
+                              In addition, the positional information of each robot link is obtained from
+                              the joint angle data of the robot through forward kinematics. Then a bounding
+                              volume (OBB: Oriented Bounding Box) is applied to both the operator and each
+                              robot link. The SAT (Separated Axis Theorem) is used to detect overlap
                               between bounding volumes and return a feedback signal.<br>
                               Sep. 2022 - Dec. 2022
                             </p>
                             <p>
-                              <a href="data/undergraduate_paper.pdf">paper</a> |
-                              <a href="https://github.com/JU-SUK/Collision-detection-system-based-on-computer-vision-for-Human-Robot-Interaction">code</a>
+                              <a class="link-pill link-pill-sm" href="projects/collision_detection/undergraduate_paper.pdf"><i class="fas fa-file-pdf"></i> paper</a>
+                              <a class="link-pill link-pill-sm" href="https://github.com/JU-SUK/Collision-detection-system-based-on-computer-vision-for-Human-Robot-Interaction"><i class="fab fa-github"></i> github</a>
                             </p>
                           </td>
                         </tr>
 
                       </tbody>
                     </table>
-                    <!-- end of projects table -->
 
                   </td>
                 </tr>
               </tbody>
             </table>
 
+            <!-- Education 섹션 -->
+            <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Education</h2>
+
+                    <div class="edu-item">
+                      <div class="edu-logo">
+                        <img src="cv/snu_logo.png" alt="Seoul National University">
+                      </div>
+                      <div class="edu-info">
+                        <div class="edu-degree">M.S. & Ph.D. in Aerospace Engineering</div>
+                        <div class="edu-school">Seoul National University &nbsp;·&nbsp; <span class="edu-period">2024 - Present</span></div>
+                        <div>Advisor: <a href="https://scholar.google.co.kr/citations?user=TLQUwIMAAAAJ&hl=en">Prof. H. Jin Kim</a></div>
+                      </div>
+                    </div>
+
+                    <div class="edu-item">
+                      <div class="edu-logo">
+                        <img src="cv/yonsei_logo.png" alt="Yonsei University">
+                      </div>
+                      <div class="edu-info">
+                        <div class="edu-degree">B.S. in Mechanical Engineering</div>
+                        <div class="edu-school">Yonsei University &nbsp;·&nbsp; <span class="edu-period">2017 - 2023</span></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
             <!-- Awards 섹션 -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
                   <td style="padding:20px;width:100%;vertical-align:middle">
@@ -256,5 +312,19 @@
         </tr>
       </tbody>
     </table>
+    <script>
+      function playAutoplayVideos() {
+        document.querySelectorAll('video[autoplay]').forEach(function(v) {
+          if (v.paused) v.play().catch(function(){});
+        });
+      }
+      window.addEventListener('pageshow', playAutoplayVideos);
+      window.addEventListener('load', playAutoplayVideos);
+      document.querySelectorAll('video[autoplay]').forEach(function(v) {
+        v.addEventListener('canplay', function() {
+          if (v.paused) v.play().catch(function(){});
+        });
+      });
+    </script>
   </body>
 </html>
