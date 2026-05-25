@@ -126,12 +126,18 @@
 
 <!-- Teaser: TL;DR one-liner + overview video. Place teaser.mp4 under static/videos/. -->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
     <div class="hero-body">
       <h2 class="subtitle has-text-centered">
         <strong>TL;DR:</strong> [one-sentence summary of DynaFLIP goes here]
       </h2>
-      <img id="teaser" src="./static/experiments/placeholder.png" alt="Teaser placeholder" style="display:block; width:100%; max-height:480px; object-fit:contain; margin:0 auto;">
+      <video id="teaser"
+             src="./static/videos/project_page_overview_video.mp4"
+             poster="./static/images/project_page_overview_poster.jpg"
+             controls muted preload="metadata" playsinline
+             style="display:block; width:100%; margin:0 auto;">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
 </section>
@@ -165,7 +171,14 @@
   <div class="container is-max-widescreen">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <img src="./static/images/architecture.png" alt="DynaFLIP architecture" style="width:100%; height:auto;">
+        <video src="./static/videos/dynaflip_method.mp4"
+               poster="./static/images/architecture.png"
+               autoplay muted loop playsinline controls
+               preload="metadata"
+               style="width:100%; height:auto; border-radius:8px;"
+               aria-label="DynaFLIP method overview video">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </div>
